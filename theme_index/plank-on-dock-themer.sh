@@ -169,16 +169,19 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 cd $HOME/.config/plank/dock1/theme_index/
 chmod +x plank-on-dock-themer-update-theme-list.sh
 rm -Update-theme-list.desktop
+
+cp $HOME/.config/plank/dock1/theme_index/updater-icon/-Update-theme-list.desktop $HOME/.config/plank/dock1/theme_index/-Update-theme-list.desktop
+
 #theme-list updater
-echo ---------------------------------
-		echo \[Desktop Entry\] >> "-Update-theme-list.desktop"
-		echo Type=Application >> "-Update-theme-list.desktop"
-		echo Terminal=true >> "-Update-theme-list.desktop"
-		echo Name="Update-theme-list" >> "-Update-theme-list.desktop"
-		echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> "-Update-theme-list.desktop"
-		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
-		echo "--------------------------------"
-cat -Update-theme-list.desktop
+#echo ---------------------------------
+		#echo \[Desktop Entry\] >> "-Update-theme-list.desktop"
+		#echo Type=Application >> "-Update-theme-list.desktop"
+		#echo Terminal=true >> "-Update-theme-list.desktop"
+		#echo Name="Update-theme-list" >> "-Update-theme-list.desktop"
+		#echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> "-Update-theme-list.desktop"
+		#echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
+		#echo "--------------------------------"
+#cat -Update-theme-list.desktop
 
 
 
@@ -253,7 +256,6 @@ fi
 #sed -i 's@DockItems=plank.dockitem;;*@DockItems=plank.dockitem;;plank-themer-ondock.dockitem;;@' ~/.config/plank/dock1/settings 
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod +x *.desktop
-mv Update-theme-list.desktop "-Update-theme-list.desktop"
 
 plank &
 #limpia todo 
