@@ -179,7 +179,7 @@ echo ---------------------------------
 		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> -Update-theme-list.desktop
 		echo "--------------------------------"
 cat -Update-theme-list.desktop
-
+chmod +x -Update-theme-list.desktop
 
 
 
@@ -266,7 +266,7 @@ plank &
 #Copying the items, filling up the list
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
-mv 
+
 
 
 
