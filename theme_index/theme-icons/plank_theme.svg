@@ -26,9 +26,8 @@
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
      id="defs7"><linearGradient
-       inkscape:collect="always"
        id="linearGradient3789"><stop
-         style="stop-color:#000000;stop-opacity:1;"
+         style="stop-color:#404040;stop-opacity:1;"
          offset="0"
          id="stop3791" /><stop
          style="stop-color:#000000;stop-opacity:0;"
