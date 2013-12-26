@@ -147,6 +147,9 @@ rm -R $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 mkdir -p $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
+cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+chmod +x *.desktop
+
 #=END==========================================================================
 #====--------BUILDING ITEMS: LIST OF THEMES AND PER-THEME-APPLYER --------=====
 #==============================================================================
