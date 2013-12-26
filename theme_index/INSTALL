@@ -1,0 +1,9 @@
+Open a terminal and paste this code:
+
+cd ~ && mkdir -p ~/.temp-plank-themer && cd ~/.temp-plank-themer && wget https://github.com/rhoconlinux/plank-themer/archive/master.zip && unzip master.zip && cd plank-themer-master/ && rm -R ~/.config/plank/dock1/theme_index; cp -a theme_index/ ~/.config/plank/dock1 && cd ~ && rm -R ~/.temp-plank-themer && sh ~/.config/plank/dock1/theme_index/plank-on-dock-themer.sh 
+
+Optional: Install an updated Themes Collection :)
+
+cd ~ && mkdir -p ~/.temp-plank-themer && cd ~/.temp-plank-themer && wget https://copy.com/yMYioITOj8VK/themes-repo.tar.gz?download=1 -O plank-themes.tar.gz && tar -zxvf plank-themes.tar.gz && cd themes-repo/ && sudo cp -a . /usr/share/plank/themes/ && sudo rm /usr/share/plank/themes/credits 
+
+
