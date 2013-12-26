@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Default
+Icon=/path/to/icon/icon.svg
+Exec=/home/rho/.config/plank/dock1/theme_index/Default.sh
