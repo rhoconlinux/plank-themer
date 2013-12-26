@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Terminal=true
-Name=Transparent
-Icon=/path/to/icon/icon.svg
-Exec=/home/rho/.config/plank/dock1/theme_index/Transparent.sh
