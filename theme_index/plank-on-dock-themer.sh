@@ -143,9 +143,9 @@ chmod +x $HOME/.config/plank/dock1/theme_index/*.sh
 
 #MOVING THE .DESKTOP FILES TO THE PROPER TEMP LOCATION
 #======================================================
-rm -R $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock;
-mkdir -p $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock
-cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock
+rm -R $HOME/.config/plank/dock1/theme_index/plank-themer-ondock;
+mkdir -p $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 #=END==========================================================================
 #====--------BUILDING ITEMS: LIST OF THEMES AND PER-THEME-APPLYER --------=====
