@@ -7,4 +7,4 @@ Optional:
 Install some awesome themes made by the talented linux-world community :)
 
 cd ~/.config/plank/dock1/themes-repo/Themes/ && sudo cp -a . /usr/share/plank/themes
- 
+
