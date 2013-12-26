@@ -168,7 +168,7 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 		#check install
 cd $HOME/.config/plank/dock1/theme_index/
 chmod +x plank-on-dock-themer-update-theme-list.sh
-
+rm -Update-theme-list.desktop
 #theme-list updater
 echo ---------------------------------
 		echo \[Desktop Entry\] >> -Update-theme-list.desktop
