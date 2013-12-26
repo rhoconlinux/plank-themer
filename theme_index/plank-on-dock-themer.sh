@@ -171,14 +171,14 @@ chmod +x plank-on-dock-themer-update-theme-list.sh
 
 #theme-list updater
 echo ---------------------------------
-		echo \[Desktop Entry\] >> Update-theme-list.desktop
-		echo Type=Application >> Update-theme-list.desktop
-		echo Terminal=true >> Update-theme-list.desktop
-		echo Name="Update-theme-list" >> Update-theme-list.desktop
-		echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> Update-theme-list.desktop
-		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> Update-theme-list.desktop
+		echo \[Desktop Entry\] >> ·Update-theme-list.desktop
+		echo Type=Application >> ·Update-theme-list.desktop
+		echo Terminal=true >> ·Update-theme-list.desktop
+		echo Name="Update-theme-list" >> ·Update-theme-list.desktop
+		echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> ·Update-theme-list.desktop
+		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> ·Update-theme-list.desktop
 		echo "--------------------------------"
-cat Update-theme-list.desktop
+cat ·Update-theme-list.desktop
 
 
 
