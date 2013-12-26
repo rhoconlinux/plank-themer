@@ -163,14 +163,7 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 #====--------DOCK STUFF --------=====
 #==============================================================================
 
-#CREA EL ITEM QUE VA EN EL DOCK
-#==================================
-		#check install
-cd $HOME/.config/plank/dock1/theme_index/
-chmod +x plank-on-dock-themer-update-theme-list.sh
-rm -Update-theme-list.desktop
 
-cp $HOME/.config/plank/dock1/theme_index/updater-icon/-Update-theme-list.desktop $HOME/.config/plank/dock1/theme_index/-Update-theme-list.desktop
 
 #theme-list updater
 #echo ---------------------------------
@@ -225,6 +218,15 @@ cp $HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem ~/.config/
 #=======================
 #DOCK ITEM CREATED
 #=======================
+
+#CREA EL ITEM QUE VA EN EL DOCK
+#==================================
+		#check install
+cd $HOME/.config/plank/dock1/theme_index/
+chmod +x plank-on-dock-themer-update-theme-list.sh
+
+
+
 
 #.........................................
 
