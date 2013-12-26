@@ -78,7 +78,7 @@ while IFS= read -r file
 #DESKTOP FILES BUILDER
 #=====================
 
-#get the icon
+##get the icon override (not necesary if using github)
 #		loc="$HOME/.config/plank/dock1/theme_index/theme-icons"
 #				echo "Testing for previous installs...." #info on previous versions
 #				if [ -d "$loc" ]; then #-d check directories
@@ -89,10 +89,8 @@ while IFS= read -r file
 #				echo "Creating a new stuff"
 #			fi
 #		mkdir -p $HOME/.config/plank/dock1/theme_index/theme-icons
-#
-#
 #wget  -O $HOME/.config/plank/dock1/theme_index/theme-icons/plank_theme.svg
-
+#
 
 while IFS= read -r file
         do
@@ -145,11 +143,12 @@ chmod +x $HOME/.config/plank/dock1/theme_index/*.sh
 
 #MOVING THE .DESKTOP FILES TO THE PROPER TEMP LOCATION
 #======================================================
-rm -R $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock;
-mkdir -p $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock
-cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index_back/plank-themer-ondock
-
+rm -R $HOME/.config/plank/dock1/theme_index/plank-themer-ondock;
+mkdir -p $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 #=END==========================================================================
 #====--------BUILDING ITEMS: LIST OF THEMES AND PER-THEME-APPLYER --------=====
 #==============================================================================
+
+
