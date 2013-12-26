@@ -253,6 +253,7 @@ fi
 #sed -i 's@DockItems=plank.dockitem;;*@DockItems=plank.dockitem;;plank-themer-ondock.dockitem;;@' ~/.config/plank/dock1/settings 
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod +x *.desktop
+mv Update-theme-list.desktop "-Update-theme-list.desktop"
 
 plank &
 #limpia todo 
