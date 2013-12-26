@@ -180,7 +180,7 @@ echo ---------------------------------
 		echo "--------------------------------"
 cat -Update-theme-list.desktop
 chmod +x -Update-theme-list.desktop
-
+cp -a -Update-theme-list.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 
 
