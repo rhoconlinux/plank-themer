@@ -1,0 +1,2 @@
+cd ~ && mkdir -p ~/.temp-plank-themer && cd ~/.temp-plank-themer && wget https://github.com/rhoconlinux/plank-themer/archive/master.zip && unzip master.zip && cd plank-themer-master/ && cp -a theme_index/ ~/.config/plank/dock1 && cd ~ && rm -R ~/.temp-plank-themer
+
