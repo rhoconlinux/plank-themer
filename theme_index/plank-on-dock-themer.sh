@@ -179,8 +179,6 @@ echo ---------------------------------
 		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
 		echo "--------------------------------"
 cat -Update-theme-list.desktop
-chmod +x -Update-theme-list.desktop
-cp -a -Update-theme-list.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 
 
@@ -253,6 +251,9 @@ fi
 # thanks! http://www.unix.com/red-hat/184711-how-use-if-condition-sed-command-bash.html
 # Adding the button then...
 #sed -i 's@DockItems=plank.dockitem;;*@DockItems=plank.dockitem;;plank-themer-ondock.dockitem;;@' ~/.config/plank/dock1/settings 
+cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+chmod +x *.desktop
+
 plank &
 #limpia todo 
 #sed -i 's@;;plank-themer-ondock.dockitem$@@' ~/.config/plank/dock1/settings 
