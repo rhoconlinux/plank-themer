@@ -234,7 +234,7 @@ chmod +x plank-on-dock-themer-update-theme-list.sh
 #DOCK ITEM *ON DOCK*: after plank anchor
 #=========================================
 
-killall plank;
+#killall plank;
 
 #fix timestamp on dock item
 touch -d date -d @1387748732 /home/rho/.config/plank/dock1/launchers/plank-themer-ondock.dockitem 
@@ -266,8 +266,8 @@ cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/the
 
 #CLOSING
 cd $HOME
-plank &
-kill && 
+#plank &
+#kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
 
 
