@@ -263,11 +263,10 @@ chmod +x *.desktop
 #LAST STEP:
 #Copying the items, filling up the list
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
-cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
-
+#CLOSING
+cd $HOME
 plank &
-
 kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
 
