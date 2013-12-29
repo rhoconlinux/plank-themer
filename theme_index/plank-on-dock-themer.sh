@@ -259,14 +259,6 @@ fi
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod +x *.desktop
 
-plank &
-#limpia todo 
-#sed -i 's@;;plank-themer-ondock.dockitem$@@' ~/.config/plank/dock1/settings 
-
-
-
-
-
 
 #LAST STEP:
 #Copying the items, filling up the list
@@ -274,7 +266,10 @@ cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/the
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 
+plank &
 
+kill && 
+#thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
 
 
 
