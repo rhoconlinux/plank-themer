@@ -237,7 +237,7 @@ chmod +x plank-on-dock-themer-update-theme-list.sh
 #killall plank;
 
 #fix timestamp on dock item
-touch -d date -d @1387748732 /home/rho/.config/plank/dock1/launchers/plank-themer-ondock.dockitem 
+touch -d date -d @1387748732 $HOME/.config/plank/dock1/launchers/plank-themer-ondock.dockitem 
 
 const='plank-themer-ondock.dockitem'
 if [ -e ~/.config/plank/dock1/settings ]; then
