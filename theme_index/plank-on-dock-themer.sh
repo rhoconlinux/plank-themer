@@ -282,7 +282,7 @@ cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod u+x **/*.sh
-
+clear
 
 #LAST STEP:
 #Copying the items, filling up the list
