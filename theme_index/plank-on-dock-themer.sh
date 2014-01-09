@@ -289,7 +289,10 @@ clear
 
 #CLOSING
 cd $HOME
-echo "Success! thanks for trying the app and remember to comment if you experience anything odd! ^_^"
+echo "Success!"
+echo "Thanks for trying Plank-Themer, and remember to comment if you experience anything odd! ^_^"
+echo "Click on the NEW ICON you see on your dock"
+
 #plank &
 #kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
