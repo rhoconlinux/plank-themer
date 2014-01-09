@@ -197,7 +197,7 @@ echo "creating the .desktop file to update the theme list... done"
 					echo "Deleting temp FOLDER ...Automatically erasing that stuff"
 					rm -R "~/.temp-plank-themer"
 				else
-				echo "...no temp folder found: weard but nothing to do. "
+				echo "...no temp folder found: weard but nothing to do."
 			fi
 
 
