@@ -164,17 +164,32 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 #==============================================================================
 
 
+echo "creating the desktop file to update the theme list..."
+#theme-list updater DESKTOP
+echo ---------------------------------
+		echo \[Desktop Entry\] >> "-Update-theme-list.desktop"
+		echo Type=Application >> "-Update-theme-list.desktop"
+		echo Terminal=true >> "-Update-theme-list.desktop"
+		echo Name="Update-theme-list" >> "-Update-theme-list.desktop"
+		echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> "-Update-theme-list.desktop"
+		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
+		echo "--------------------------------"
+cat -Update-theme-list.desktop
 
-#theme-list updater
-#echo ---------------------------------
-		#echo \[Desktop Entry\] >> "-Update-theme-list.desktop"
-		#echo Type=Application >> "-Update-theme-list.desktop"
-		#echo Terminal=true >> "-Update-theme-list.desktop"
-		#echo Name="Update-theme-list" >> "-Update-theme-list.desktop"
-		#echo Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg" >> "-Update-theme-list.desktop"
-		#echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
-		#echo "--------------------------------"
-#cat -Update-theme-list.desktop
+
+
+#fix for the launcher instead of that above?
+#mv myapp.desktop myapp.desktop-bak
+#sed -e "s,Icon=.*,Icon=$PWD/app.svg,g" myapp.desktop-bak > myapp.desktop
+#rm myapp.desktop-bak
+
+
+
+
+
+
+
+
 
 
 
