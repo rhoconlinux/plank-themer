@@ -259,6 +259,7 @@ fi
 # thanks! http://www.unix.com/red-hat/184711-how-use-if-condition-sed-command-bash.html
 # Adding the button then...
 #sed -i 's@DockItems=plank.dockitem;;*@DockItems=plank.dockitem;;plank-themer-ondock.dockitem;;@' ~/.config/plank/dock1/settings 
+echo "last step: putting the themes as entries on the dock window"
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod +x *.desktop
 
