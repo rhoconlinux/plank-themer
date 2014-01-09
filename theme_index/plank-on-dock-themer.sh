@@ -279,12 +279,13 @@ fi
 #sed -i 's@DockItems=plank.dockitem;;*@DockItems=plank.dockitem;;plank-themer-ondock.dockitem;;@' ~/.config/plank/dock1/settings 
 echo "last step: putting the themes as entries on the dock window"
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
-chmod +x *.desktop
+cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
+chmod u+x **/*.sh
 
 
 #LAST STEP:
 #Copying the items, filling up the list
-cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 
 #CLOSING
 cd $HOME
