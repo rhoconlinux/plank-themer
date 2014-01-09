@@ -289,6 +289,7 @@ clear
 
 #CLOSING
 cd $HOME
+echo "Success! thanks for trying the app and remember to comment if you experience anything odd! ^_^"
 #plank &
 #kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
