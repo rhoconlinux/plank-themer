@@ -163,8 +163,11 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 #====--------DOCK STUFF --------=====
 #==============================================================================
 
+#move to the place and delete if existed:
+cd $HOME/.config/plank/dock1/theme_index/
+rm -f -Update-theme-list.desktop
 
-echo "creating the desktop file to update the theme list..."
+echo "creating the .desktop file to update the theme list..."
 #theme-list updater DESKTOP
 echo ---------------------------------
 		echo \[Desktop Entry\] >> "-Update-theme-list.desktop"
@@ -175,7 +178,7 @@ echo ---------------------------------
 		echo Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list".sh >> "-Update-theme-list.desktop"
 		echo "--------------------------------"
 cat -Update-theme-list.desktop
-echo "creating the desktop file to update the theme list... done"
+echo "creating the .desktop file to update the theme list... done"
 
 
 #fix for the launcher instead of that above?
