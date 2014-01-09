@@ -282,13 +282,31 @@ cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod u+x **/*.sh
+cd $HOME
 clear
 
 #LAST STEP:
 #Copying the items, filling up the list
 
+echo "Everithing went OK so far!"
+echo "... Now, do you want to install the Themes of the repository?"  
+echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
+echo "The process requires root pemissions."  
+echo ""
+echo ""
+echo "Do you wish to install the themes?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) sudo cp -a . /usr/share/plank/themes ; echo "... Done! :)" ; break;;
+        No ) exit;;
+    esac
+done
+# credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
+
+
+
 #CLOSING
-cd $HOME
+clear
 echo "Success!"
 echo "Thanks for trying Plank-Themer!!!"
 echo ""
@@ -300,7 +318,6 @@ echo "...And remember to comment if you experience anything odd ^_^"
 #plank &
 #kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
-
 
 
 # #OLD VERSION CHECKER
