@@ -192,25 +192,28 @@ cp -a $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/
 			echo "old plank-themer-ondock.dockitem Detected! ...Automatically erasing that stuff"
 			rm "$HOME/.config/plank/dock1/launchers/plank-themer-ondock.dockitem"
 		else
-		echo "...no DOCK ITEM found:"
+		echo "plank-themer-ondock...no DOCK ITEM found:"
 		echo "Creating a brand new one"
 	fi
 
 #creation of the dockitem
 #check aux file created to be copied as dockitem
-		if [ -f "$HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem" ]; then
-			echo "old plank-themer-ondock.dockitem Detected! ...Automatically erasing that stuff"
-			rm "$HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem"
-		else
-		echo "...no DOCK ITEM found:"
-		echo "Creating a brand new one"
-	fi
+#		if [ -f "$HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem" ]; then
+#			echo "old plank-themer-ondock.dockitem Detected! ...Automatically erasing that stuff"
+#			rm "$HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem"
+#		else
+#		echo "plank-themer-ondock...no DOCK ITEM found:"
+#		echo "Creating a brand new one"
+#	fi
 
+#Creating dockitem
+echo "Creating plank themer dockitem..."
 cd $HOME/.config/plank/dock1/theme_index/
 touch $HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem
 echo \[PlankItemsDockItemPreferences\] >> $HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem 
 echo Launcher=file://$HOME/.config/plank/dock1/theme_index/plank-themer-ondock >> $HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem 
 
+echo "Adding dockitem to the dock..."
 #copying the aux file to the actual folder. Fixing result.
 cp $HOME/.config/plank/dock1/theme_index/plank-themer-ondock.dockitem ~/.config/plank/dock1/launchers/ 
 #FIX
