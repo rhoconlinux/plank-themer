@@ -290,9 +290,13 @@ clear
 #CLOSING
 cd $HOME
 echo "Success!"
-echo "Thanks for trying Plank-Themer, and remember to comment if you experience anything odd! ^_^"
-echo "Click on the NEW ICON you see on your dock"
-
+echo "Thanks for trying Plank-Themer!!!"
+echo ""
+echo "How to use:"
+echo "-----------"
+echo "1) Click on the NEW DARK ICON you now see on Plank"
+echo "2) Select your theme to change to look of the Dock"
+echo "And remember to comment if you experience anything odd ^_^"
 #plank &
 #kill && 
 #thank you Crusty! http://ubuntuforums.org/showthread.php?t=1685823
