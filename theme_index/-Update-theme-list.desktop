@@ -3,5 +3,5 @@ Type=Application
 Terminal=true
 Name=Update-theme-list
 Icon="$HOME/.config/plank/dock1/theme_index/updater-icon/update-theme-list.svg"
-Exec=$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list.sh
+Exec="$HOME/.config/plank/dock1/theme_index/plank-on-dock-themer-update-theme-list.sh"
 Name[es_ES]=-Update-theme-list
