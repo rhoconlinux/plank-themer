@@ -289,7 +289,7 @@ cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod u+x **/*.sh
-read -p  "Updating themes... Do you want to continue? " goon
+#read -p  "Updating themes... Do you want to continue? " goon
 cd $HOME/.config/plank/dock1/theme_index/
 sh plank-on-dock-themer-update-theme-list.sh
 cd $HOME
@@ -304,7 +304,7 @@ echo "Now, do you want to INSTALL THE THEMES of the repository?"
 echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
-read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
+#read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
 confirm () {
     # call with a prompt string or use a default
     read -r -p "${1:-Are you sure? [y/N]} " response
@@ -318,6 +318,7 @@ confirm () {
     esac
 }
 confirm && cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
+#http://stackoverflow.com/questions/3231804/in-bash-how-to-add-are-you-sure-y-n-to-any-command-or-alias
 
 
 #if [[ $response =~ ^(yes|y|Y|YES|Yes)$ ]];then
