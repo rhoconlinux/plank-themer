@@ -305,10 +305,25 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
-if [[ $response =~ ^(yes|y|Y|YES|Yes)$ ]];then
-    echo "copying"
-    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
-fi
+confirm () {
+    # call with a prompt string or use a default
+    read -r -p "${1:-Are you sure? [y/N]} " response
+    case $response in
+        [yY][eE][sS]|[yY]) 
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+confirm && cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
+
+
+#if [[ $response =~ ^(yes|y|Y|YES|Yes)$ ]];then
+#    echo "copying"
+#    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
+#fi
 
 cd $HOME/.config/plank/dock1/theme_index/
 sh plank-on-dock-themer-update-theme-list.sh
