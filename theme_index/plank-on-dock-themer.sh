@@ -317,7 +317,7 @@ confirm () {
             ;;
     esac
 }
-confirm "Install themes (y) or finish the installation (n)"&& cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
+confirm "Install the themes (y) or finish the installation (n)"&& cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 #http://stackoverflow.com/questions/3231804/in-bash-how-to-add-are-you-sure-y-n-to-any-command-or-alias
 
 
