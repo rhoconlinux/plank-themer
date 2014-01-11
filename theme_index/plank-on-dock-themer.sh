@@ -301,6 +301,7 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 echo "Do you wish to install the themes?"
+break
 sudo cp -v -a . /usr/share/plank/themes ;
 echo "... Done! :)" 
 
