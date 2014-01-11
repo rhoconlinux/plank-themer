@@ -304,7 +304,6 @@ echo "Now, do you want to INSTALL THE THEMES of the repository?"
 echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
-
 read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]; then
     echo "copying"
