@@ -302,12 +302,8 @@ echo "The process requires root pemissions."
 echo ""
 echo ""
 echo "Do you wish to install the themes?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) sudo cp -a . /usr/share/plank/themes ; echo "... Done! :)" ; break;;
-        No ) exit;;
-    esac
-done
+sudo cp -a . /usr/share/plank/themes ; echo "... Done! :)" ; break;;
+
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
 
 
