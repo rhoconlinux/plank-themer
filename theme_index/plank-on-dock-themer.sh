@@ -305,7 +305,7 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]; then
+if [[ $response =~ ^(yes|y|Y|YES|Yes)$ ]]; then
     echo "copying"
     echo cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 fi
