@@ -306,7 +306,7 @@ echo ""
 
 read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes ;;
+    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 else
     exit 0
 fi
