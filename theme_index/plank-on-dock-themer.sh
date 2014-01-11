@@ -298,21 +298,50 @@ clear
 #Copying the items, filling up the list
 
 echo "Everithing went OK so far!"
-echo "... Now, do you want to install the Themes of the repository?"  
+echo ""
+echo "Now, do you want to INSTALL THE THEMES of the repository?"  
 echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
-read -p "Do you wish to install the themes? Press [Enter] to Continue"
 
-read -r -p "Do you want to install the themes? Press [y/n] to Continue " response
-if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
-then
-    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes ;;
-else
-    exit 0
-fi
 
-echo "... Done! :)" 
+
+confirm (themes)
+{
+    read -r -p "$(echo $@) ? [y/N] " YESNO
+
+    if [ "$YESNO" != "y" ]; then
+        echo >&2 "Aborting"
+        exit 1
+    fi
+
+    CMD="$1"
+    shift
+
+    while [ -n "$1" ]; do
+        echo -en "$1\0"
+        shift
+    done | xargs -0 "$CMD" || exit $?
+}
+
+
+confirm themes
+
+
+
+
+
+
+
+#read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
+#if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+#then
+#    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes ;;
+#else
+#    exit 0
+#fi
+#
+#echo "... Done! :)" 
 
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
 
