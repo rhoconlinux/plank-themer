@@ -306,8 +306,7 @@ echo "The process requires root pemissions."
 echo ""
 
 read -r -p "INSTALL THE THEMES? Press [y] to install [n] to Continue " response
-if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]] 
-	then
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     echo "copying"
     echo cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 fi
