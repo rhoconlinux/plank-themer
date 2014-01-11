@@ -301,9 +301,15 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 read -p "Do you wish to install the themes? Press [Enter] to Continue"
-read -rsp $'Do you wish to install the themes? Press any key to continue...\n' -n1 key
-cd $HOME/.config/plank/dock1/themes-repo/Themes
-sudo cp -v -a . /usr/share/plank/themes ;
+
+read -r -p "Do you want to install the themes? Press [y/n] to Continue " response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+    cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes ;;
+else
+    exit 0
+fi
+
 echo "... Done! :)" 
 
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
