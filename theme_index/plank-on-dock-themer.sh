@@ -301,6 +301,7 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 read -p "Do you wish to install the themes?"
+cd $HOME/.config/plank/dock1/themes-repo/Themes
 sudo cp -v -a . /usr/share/plank/themes ;
 echo "... Done! :)" 
 
