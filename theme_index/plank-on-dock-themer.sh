@@ -289,6 +289,7 @@ cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cp $HOME/.config/plank/dock1/theme_index/*.desktop $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 cd $HOME/.config/plank/dock1/theme_index/plank-themer-ondock
 chmod u+x **/*.sh
+read -p  "Updating themes... Do you want to continue? " goon
 cd $HOME/.config/plank/dock1/theme_index/
 sh plank-on-dock-themer-update-theme-list.sh
 cd $HOME
