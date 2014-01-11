@@ -339,7 +339,7 @@ clear
 #CLOSING
 clear
 echo "Success!"
-echo "Thanks for trying Plank-Themer!!!"
+echo "Thanks for trying Plank-Themer v.02!!!"
 echo ""
 echo "How to use:"
 echo "-----------"
