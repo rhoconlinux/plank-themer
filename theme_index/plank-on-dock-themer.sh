@@ -311,7 +311,11 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
     echo "copying"
     echo cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 fi
+cd $HOME/.config/plank/dock1/theme_index/
+sh plank-on-dock-themer-update-theme-list.sh
 echo "... Done! :)" 
+cd $HOME
+clear
 
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
 
