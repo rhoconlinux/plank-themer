@@ -301,7 +301,7 @@ echo " (They will be writen in your plank folder /usr/share/plank/themes/)"
 echo "The process requires root pemissions."  
 echo ""
 echo "Do you wish to install the themes?"
-sudo cp -v -a . /usr/share/plank/themes 
+sudo cp -v -a . /usr/share/plank/themes ;
 echo "... Done! :)" 
 
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
