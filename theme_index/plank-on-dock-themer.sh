@@ -310,7 +310,6 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 else
     exit 0
 fi
-
 echo "... Done! :)" 
 
 # credits: http://stackoverflow.com/questions/226703/how-do-i-prompt-for-input-in-a-linux-shell-script?newreg=00988c8ac8f347f3b777f811aab675c8
