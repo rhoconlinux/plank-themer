@@ -309,6 +309,7 @@ if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]
     echo "copying"
     echo cd $HOME/.config/plank/dock1/themes-repo/Themes && sudo cp -v -a . /usr/share/plank/themes
 fi
+
 cd $HOME/.config/plank/dock1/theme_index/
 sh plank-on-dock-themer-update-theme-list.sh
 echo "... Done! :)" 
