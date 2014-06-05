@@ -1,7 +1,7 @@
 
 [PlankDrawingTheme]
 TopRoundness=20
-BottomRoundness=20
+BottomRoundness=2
 #The starting color (RGBA) of the fill gradient.
 FillStartColor=0;;0;;0;;200
 #The ending color (RGBA) of the fill gradient.
